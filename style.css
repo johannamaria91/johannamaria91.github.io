@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: honeydew;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+h2 {
+  font-family: 'Sanchez', serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 5em;
+}
+
+nav {
+  position: fixed; 
+  top: 0; 
+  background-color: honeydew;
+  width: 100%;
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+nav li {
+    padding: 1em 2em;
+}
+
+nav a {
+  color:rgb(62, 63, 62);
+  font-weight: bold;
+}
+
+nav a:hover{
+  color:rgb(13, 114, 93);
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+section ul {
+  list-style: none;
+}
+
+main > section {
+    background-color: rgb(62, 63, 62);
+    color: honeydew;
+    min-width: 50vw;
+    margin-bottom:2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 0;
+}
+
+main > section:nth-child(odd) {
+    background-color: rgb(13, 114, 93);
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+#about p {
+  max-width: 35em;
+  align-self: center;
+}
+
+#cv h4{
+  font-family: 'Sanchez', serif;
+}
+
+.cv-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cv-container section {
+  width: 40%;
+  text-align: left;
+  
+}
+
+.cv-container section:first-child {
+  padding: 2em 2em 2em 3em;
+}
+
+.cv-container section:last-child {
+  padding: 2em 3em 2em 2em;
+}
+
+
+.education {
+  align-items: center;
+}
+.education li{
+  padding: 1em;
+  
+}
+
+.education ul{
+  width: 50%;
+  
+}
+
+.misc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: honeydew;
+  color: rgb(13, 114, 93);
+}
+
+.languages {
+  padding-right: 1em;
+}
+
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(5, 4em);
+  padding-left: 1em;
+  align-items:center;
+}
+
+.courses {
+  width: 80%;
+    padding-inline-start: 0px;
+    align-self: center;
+}
+
+.courses li {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 2em;
+    color: black;
+    
+}
+
+.courses li:nth-child(even) {
+    background-color: rgb(250, 177, 89);
+}
+
+.courses li:nth-child(odd) {
+    background-color: rgb(249, 207, 156);
+}
+
+.courses li span {
+    align-self: center;
+}
+
+.courses li span:first-child {
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+}
+
+.courses h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.courses h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.courses li span * {
+  max-width: 70%;
+}
+
+.courses li span a {
+  font-size: .8em;
+  color:rgb(62, 63, 62);
+}
+
+.courses li span a:visited {
+  color:rgb(62, 63, 62);
+}
+
+.courses li > span:last-child {
+    font-size: 1.5em;
+}
+
+ 
+
+  .dots:after {
+    content: "...";
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: loading-dots 1s infinite .3s;
+    animation-fill-mode: forwards;
+    width: 1em;
+  }
+  
+  @keyframes loading-dots {
+    25% {
+      content: "";
+    }
+    50% {
+      content: ".";
+    }
+    75% {
+      content: "..";
+    }
+    100% {
+      content: "...";
+    }
+  } 
+
+  #projects {
+    height: fit-content;
+  }
+
+  #projects > section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: fit-content(300px) fit-content(300px);
+      grid-gap: 2em;
+      align-self: center;
+      width: 85%;
+      height: fit-content;
+  }
+
+  #projects section article {
+    
+    border-radius: .5em;
+    background-color: honeydew;
+    color:rgb(62, 63, 62);
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }  
+
+  #projects a:visited {
+    color: honeydew;
+  }
+
+  #projects a {
+    color: honeydew;
+  }
+
+  #projects img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    object-position: top;
+    border-radius: .3em;
+    
+    }
+
+    #projects ul {
+      padding-inline-start: 0;
+    }
+
+    .img-container {
+      width: 100%; 
+      height: 20em;
+      margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    overflow: hidden;
+    }
+
+    button {
+      background-color: rgb(62, 63, 62);
+      border: none;
+      color: honeydew;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 2em;
+
+    }
+
+    button:hover {
+      background-color: rgb(116, 117, 116)
+    }
+  
+  @media screen and (max-width: 480px) {
+  
+    body {
+        margin: 0;
+      }
+
+      nav {
+        text-align: center;
+      }
+      nav ul {
+        padding-inline-start: 0;
+      }
+
+      nav li {
+        padding: 1em .5em;
+    }
+      
+      main {
+        padding: 0;
+      }
+
+      h1 {
+        margin-bottom: 1em;
+      }
+
+      
+
+#about {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 6em;
+}
+
+#cv {
+  padding-bottom: 0;
+  background-color: honeydew;
+  color:rgb(62, 63, 62);
+  padding-top: 0;
+}
+
+#cv h2 {
+  margin-block-end: 0.2em;
+  font-size: 1.6em;
+  padding: 0 .5em;
+}
+
+#cv h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#cv h4{
+  font-size: 1.3em;
+}
+
+.cv-container {
+  flex-direction: column;
+}
+
+.cv-container section:first-child, .cv-container section:last-child {
+  width: auto;
+  padding: 1em 2em 2em 2em;
+  padding-bottom: 0;
+}
+   
+.cv-container section:last-child {
+  background-color: honeydew;
+  color:rgb(62, 63, 62);
+}
+
+.cv-container > section {
+  text-align: center;
+}
+
+.education {
+  width: fit-content;
+}
+
+.education ul {
+  padding-inline-start: 0;
+  width: auto;
+}
+
+.languages figure {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+    
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 4em);
+  grid-gap: 1em;
+  padding-left: 1em;
+  align-items: center;
+}
+
+.courses {
+  width: 90%; 
+  }
+
+.courses li span * {
+  max-width: 90%;
+}
+
+.courses p {
+  font-size: .8em;
+}
+
+#projects > section {
+  grid-template-columns: repeat(1, 1fr);
+   
+}
+
+
+    }
